@@ -1,3 +1,3 @@
-import Header from "./moduls/header";
+import Header from "./headers.js";
 
 new Header();
