@@ -1,0 +1,39 @@
+@use "../helpers/index" as *;
+
+.header {
+  &__contact-us-link {
+  }
+  &__button-burger {
+  }
+}
+
+.burger-button {
+}
+.visible-mobile {
+}
+.button {
+  display: inline-flex;
+  padding: rem(14) rem(24);
+  justify-content: center;
+  font-size: rem(18);
+  color: var(--color-gray-60);
+  white-space: nowrap;
+  background-color: var(--color-dark);
+  border: var(--boder);
+  border-radius: rem(12);
+  @include laptop {
+    padding: rem(14) rem(20);
+    font-size: rem(14);
+    border-radius: rem(8);
+  }
+
+  @include hover {
+    color: var(--color-accent);
+    background-color: var(--color-dark-10);
+    border: 1px solid var(--color-accent);
+  }
+}
+.button--accent {
+  background-color: var(--color-accent);
+  color: var(--color-dark);
+}

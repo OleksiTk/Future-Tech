@@ -1,0 +1,7 @@
+@use "../helpers/index" as *;
+
+.logo {
+  max-width: fluid(179, 126);
+  &__img {
+  }
+}
