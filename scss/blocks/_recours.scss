@@ -1,0 +1,39 @@
+@use "../helpers/index" as *;
+.resourse-preview {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: start;
+
+  &__team {
+    display: flex;
+    &:not(:last-child) {
+      margin-bottom: rem(30);
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(14);
+
+    @include laptop {
+      row-gap: rem(6);
+    }
+    &:not(:last-child) {
+      margin-bottom: rem(30);
+    }
+  }
+
+  &__title {
+  }
+
+  &__subtitle {
+  }
+
+  &__button {
+    @include tablet {
+      width: 100%;
+    }
+  }
+}

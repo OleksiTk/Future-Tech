@@ -1,0 +1,22 @@
+@use "../helpers/index" as *;
+
+.badge {
+  user-select: none;
+  display: inline-flex;
+  padding: fluid(4, 2) fluid(14, 10);
+  background-color: var(--color-dark-10);
+  border-radius: rem(4);
+  color: var(--color-light);
+  font-size: rem(16);
+  background: linear-gradient(var(--color-dark-10), var(--color-dark-10))
+      padding-box,
+    linear-gradient(45deg, var(--color-dark-15) 64%, var(--color-accent) 136%)
+      border-box;
+  border: rem(1) solid transparent;
+  @include laptop {
+    font-size: rem(12);
+  }
+  @include mobile {
+    font-size: rem(12);
+  }
+}

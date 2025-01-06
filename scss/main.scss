@@ -4,9 +4,20 @@
 @use "variables";
 @use "normolazi";
 @use "utlis";
-
+//header
 @use "./blocks/icon";
 @use "./blocks/burger-button";
 @use "./blocks/button";
 @use "./blocks/logo";
 @use "./blocks/header";
+@use "./blocks/metrics";
+//main
+@use "./blocks/hero";
+@use "./blocks/advanteges-card";
+@use "./blocks/recours";
+@use "./blocks/team";
+
+//footer
+@use "./blocks/badge";
+@use "./blocks/footer";
+@use "./blocks/soc1als";

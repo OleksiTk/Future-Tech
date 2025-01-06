@@ -1,0 +1,23 @@
+@use "../helpers/index" as *;
+
+.footer {
+  &__soc1als {
+  }
+}
+.soc1als {
+  &__list {
+    display: flex;
+    column-gap: rem(20);
+
+    @include laptop {
+      column-gap: rem(14);
+    }
+  }
+
+  &__item {
+  }
+
+  &__link {
+    color: var(--color-light);
+  }
+}

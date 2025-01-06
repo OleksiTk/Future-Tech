@@ -1,0 +1,113 @@
+@use "../helpers/index" as *;
+
+.main {
+}
+.hero {
+  &__main {
+    @include tablet-above {
+      display: grid;
+      grid-template-columns: 60% auto;
+      grid-template-areas:
+        "body recources-preview"
+        "metrics recources-preview";
+    }
+  }
+
+  &__body {
+    grid-area: body;
+    padding-top: rem(150);
+    padding-right: rem(50);
+    padding-bottom: rem(100);
+    @include laptop {
+      padding-top: rem(100);
+      padding-right: rem(40);
+    }
+
+    @include laptop {
+      padding-top: rem(50);
+      padding-right: rem(20);
+    }
+
+    @include mobile {
+      padding-bottom: rem(50);
+    }
+  }
+
+  &__subtitle {
+    @include fluid-text(30, 18);
+    font-family: var(--font-family-accent);
+    font-weight: 500;
+    color: var(--color-dark-40);
+    &:not(:last-child) {
+      margin-bottom: rem(30);
+      @include mobile {
+        margin-bottom: rem(14);
+      }
+    }
+  }
+
+  &__title {
+    &:not(:last-child) {
+      margin-bottom: rem(30);
+      @include mobile {
+        margin-bottom: rem(10);
+      }
+    }
+  }
+
+  &__description {
+  }
+
+  &__metrics {
+    grid-area: metrics;
+  }
+
+  &__resourse-preview {
+    grid-area: recources-preview;
+    padding-left: rem(80);
+    padding-bottom: rem(80);
+    border-left: var(--border);
+    @include laptop {
+      padding-left: rem(50);
+      padding-bottom: rem(50);
+    }
+    background: url("../../img/main/team/Container.png") 0 0 / cover no-repeat;
+
+    @include tablet {
+      width: 100vw;
+      margin-left: calc(var(--container-padding-x) * -1);
+
+      padding: rem(100) rem(40) rem(40);
+
+      background-size: contain;
+    }
+  }
+
+  &__advantages {
+    border-block: var(--border);
+  }
+
+  &__advantages-list {
+    @include tablet-above {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__advantages-item {
+    --padingX: #{rem(80)};
+    @include laptop {
+      --padingX: #{rem(50)};
+    }
+
+    @include tablet-above {
+      &:not(:first-child) {
+        padding-left: var(--padingX);
+      }
+      &:not(:last-child) {
+        padding-right: var(--padingX);
+        border-right: var(--border);
+      }
+    }
+  }
+}

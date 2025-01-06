@@ -1,0 +1,46 @@
+@use "../helpers/index" as *;
+.metrics {
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(10);
+    padding: rem(50);
+
+    @include laptop {
+      padding: rem(30) rem(40);
+    }
+
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 500px;
+      height: rem(1);
+      background-color: var(--color-dark-15);
+    }
+    &:not(:last-child) {
+      border-right: var(--border);
+    }
+    &:first-child {
+      padding-left: 0;
+    }
+  }
+
+  &__value {
+    font-weight: 600;
+  }
+
+  &__sign {
+    color: var(--color-accent);
+  }
+
+  &__key {
+  }
+}

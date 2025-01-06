@@ -1,0 +1,26 @@
+@use "../helpers/index" as *;
+.team {
+  --personImgSize: #{rem(60)};
+  display: flex;
+  padding: rem(10);
+  background-color: var(--color-dark-10);
+  border-radius: rem(100);
+
+  @include laptop {
+    --personImgSize: #{rem(50)};
+  }
+
+  @include tablet {
+    --personImgSize: #{rem(40)};
+  }
+  &__person {
+    width: var(--personImgSize);
+    background-color: var(--color-dark-15);
+    border-radius: 50%;
+    border: rem(2) solid var(--color-dark-40);
+
+    &:not(:first-child) {
+      margin-left: calc(var(--personImgSize) / 4 * -1);
+    }
+  }
+}

@@ -5,6 +5,7 @@
     padding-block: rem(20);
     text-align: center;
     border-bottom: var(--border);
+    background-color: var(--color-dark-10);
   }
 
   &__promo-inner {
@@ -15,6 +16,9 @@
 }
 
 .header {
+  position: sticky;
+  z-index: 2;
+  top: 0;
   &__body {
     padding-block: rem(20);
     background-color: var(--color-dark-10);
