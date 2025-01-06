@@ -911,11 +911,6 @@ svg * {
   padding-block: clamp(2.5rem, 0.8884297521rem + 6.6115702479vw, 7.5rem);
   background-color: var(--color-dark-10);
 }
-@media (width <= 63.99875rem) {
-  .section__header {
-    border-bottom: var(--border);
-  }
-}
 .section__header-info {
   display: grid;
   align-items: start;
