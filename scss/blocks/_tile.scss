@@ -1,0 +1,10 @@
+@use "../helpers/index" as *;
+.tile {
+  padding: fluid(40, 24);
+  border-radius: rem(12);
+  background-color: var(--color-dark-10);
+  border: var(--border);
+  @include laptop {
+    border-radius: rem(10);
+  }
+}

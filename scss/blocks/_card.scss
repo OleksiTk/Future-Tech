@@ -1,0 +1,84 @@
+@use "../helpers/index" as *;
+.card {
+  @include tablet-above {
+    display: grid;
+    grid-template-columns: 38% auto;
+  }
+  &__preview {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-right: var(--border);
+    row-gap: fluid(60, 20);
+    padding: rem(80);
+    padding-left: 0;
+
+    @include laptop {
+      padding: rem(60);
+    }
+    @include tablet {
+      padding-right: 0;
+      padding-left: 0;
+      padding-block: rem(50);
+    }
+    @include tablet {
+      border-right: none;
+      border-bottom: var(--border);
+    }
+  }
+
+  &__preview-main {
+    display: grid;
+    row-gap: fluid(50, 20);
+  }
+
+  &__preview-img {
+    width: fluid(80, 50);
+  }
+
+  &__preview-info {
+    display: grid;
+    row-gap: fluid(16, 6);
+  }
+
+  &__preview-title {
+  }
+
+  &__preview-subtitle {
+  }
+
+  &__preview-extra {
+  }
+
+  &__body {
+    padding: rem(80);
+    @include laptop {
+      padding: rem(60);
+    }
+    @include tablet {
+      padding: rem(30) rem(16);
+    }
+  }
+
+  &__grid {
+    display: grid;
+  }
+
+  &__grid--2-cols {
+    gap: fluid(30, 10);
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__cell {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    row-gap: fluid(20, 4);
+  }
+
+  &__cell-title {
+  }
+
+  &__cell-description {
+  }
+}
