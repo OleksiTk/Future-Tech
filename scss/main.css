@@ -609,10 +609,6 @@ svg * {
   pointer-events: all; /* Дозволяє взаємодіяти з елементами всередині */
 }
 
-.header__overlay:not(.is-active) {
-  pointer-events: none; /* Блокує взаємодію з меню, коли воно закрите */
-}
-
 .metrics__list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

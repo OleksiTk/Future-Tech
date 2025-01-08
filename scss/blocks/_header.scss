@@ -107,7 +107,3 @@
 .header__overlay.is-active {
   pointer-events: all; /* Дозволяє взаємодіяти з елементами всередині */
 }
-
-.header__overlay:not(.is-active) {
-  pointer-events: none; /* Блокує взаємодію з меню, коли воно закрите */
-}
