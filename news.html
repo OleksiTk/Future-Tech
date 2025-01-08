@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Future Tech</title>
+    <link rel="stylesheet" href="./scss/main.css" />
+    <script src="./js/main.js" type="module"></script>
+  </head>
+  <body>
+    <header class="header" data-js-header>
+      <div class="header__promo">
+        <div class="header__promo-inner container">
+          <a href="" class="header__promo-link"
+            ><span class="icon icon--yellow-arrow"
+              >Subscribe to our Newsletter For New & latest Blogs and
+              Resources</span
+            ></a
+          >
+        </div>
+      </div>
+      <div class="header__body">
+        <div class="header__body-inner container">
+          <a href="/" title="home" class="header__logo logo"
+            ><img
+              src="./img/header/logo/Logo.svg"
+              alt=""
+              width="179"
+              height="50"
+              class="logo__img"
+          /></a>
+          <div class="header__overlay" data-js-header-overlay>
+            <nav class="header__menu">
+              <ul class="header__menu-list">
+                <li class="header__menu-item">
+                  <a href="./index.html" class="header__menu-link">Home</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="./news.html" class="header__menu-link is-active"
+                    >News</a
+                  >
+                </li>
+                <li class="header__menu-item">
+                  <a href="/" class="header__menu-link">Podcasts</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="/" class="header__menu-link">Resources</a>
+                </li>
+              </ul>
+            </nav>
+            <a href="/" class="header__contact-us-link button button--accent"
+              >Contact Us</a
+            >
+          </div>
+          <button
+            class="header__button-burger burger-button visible-mobile"
+            type="button"
+            title="Open menu"
+            data-js-header-burger-button
+          >
+            <span class="burger-button__line"></span>
+            <span class="burger-button__line"></span>
+            <span class="burger-button__line"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="hero-alt" aria-label="news-title">
+        <header class="hero-alt__header">
+          <div class="hero-alt__header-inner container">
+            <h1 class="hero-alt__title" id="news-title">
+              Today's Headlines: Stay
+              <span class="hero-alt__title-hidden-part">Informed</span>
+            </h1>
+            <p class="hero-alt__subtitle h1 hidden-mobile" aria-hidden="true">
+              Informed
+            </p>
+            <div class="hero-alt__description">
+              Explore the latest news from around the world. We bring you
+              up-to-the-minute updates on the most significant events, trends,
+              and stories. Discover the world through our news coverage.
+            </div>
+          </div>
+        </header>
+        <div class="hero-alt__body">
+          <ul class="list">
+            <li class="list-item">
+              <article class="news-card container">
+                <img
+                  src="./img/page news/main/hero alt/Image.jpeg"
+                  alt=""
+                  width="515"
+                  height="427"
+                  class="news-card__img"
+                />
+                <div class="news-card__body">
+                  <h3 class="news-card__title">
+                    Global Climate Summit Addresses Urgent Climate Action
+                  </h3>
+                  <div class="news-card__description">
+                    <p>
+                      World leaders gathered at the Global Climate Summit to
+                      discuss urgent climate action, emissions reductions, and
+                      renewable energy targets.
+                    </p>
+                  </div>
+                </div>
+                <div class="news-card__summary summary">
+                  <dl class="summary__list">
+                    <div class="summary__item">
+                      <dt class="summary__key">Category</dt>
+                      <dd class="summary__vaule">Environment</dd>
+                    </div>
+                    <div class="summary__item">
+                      <dt class="summary__key">Publication Date</dt>
+                      <dd class="summary__vaule">October 10, 2023</dd>
+                    </div>
+                    <div class="summary__item">
+                      <dt class="summary__key">Author</dt>
+                      <dd class="summary__vaule">Jane Smith</dd>
+                    </div>
+                  </dl>
+                </div>
+                <div class="news-card__control">
+                  <div class="news-card__actions blog-actions">
+                    <ul class="blog-actions__list">
+                      <li class="blog-actions__item">
+                        <button class="blog-actions__button" type="button">
+                          <span class="blog-actions__iocn-wrapper">
+                            <svg
+                              width="24.000000"
+                              height="24.000000"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                              xmlns:xlink="http://www.w3.org/1999/xlink"
+                            >
+                              <defs>
+                                <clipPath id="clip296_29">
+                                  <rect
+                                    id="Icon"
+                                    rx="0.000000"
+                                    width="23.000000"
+                                    height="23.000000"
+                                    transform="translate(0.500000 0.500000)"
+                                    fill="white"
+                                    fill-opacity="0"
+                                  />
+                                </clipPath>
+                              </defs>
+                              <g clip-path="url(#clip296_29)">
+                                <path
+                                  id="Union (Stroke)"
+                                  d="M11.64 20.91L11.64 20.91C11.86 21.02 12.13 21.02 12.35 20.91L12.35 20.91L12.36 20.9L12.38 20.89C12.4 20.88 12.43 20.86 12.46 20.84C12.53 20.81 12.63 20.75 12.76 20.67C13.02 20.52 13.38 20.3 13.82 20.01C14.68 19.43 15.84 18.59 17.01 17.5C19.31 15.36 21.75 12.17 21.75 8.25C21.75 5.32 19.28 3 16.31 3C14.56 3 12.99 3.79 12 5.05C11 3.79 9.43 3 7.68 3C4.71 3 2.25 5.32 2.25 8.25C2.25 12.17 4.68 15.36 6.98 17.5C8.15 18.59 9.31 19.43 10.17 20.01C10.61 20.3 10.97 20.52 11.23 20.67C11.36 20.75 11.46 20.81 11.53 20.84C11.56 20.86 11.59 20.88 11.61 20.89L11.63 20.9L11.64 20.91Z"
+                                  stroke="#666666"
+                                  stroke-opacity="1.000000"
+                                  stroke-width="1.500000"
+                                  stroke-linejoin="round"
+                                />
+                              </g>
+                            </svg>
+                          </span>
+                          <span> 14k</span>
+                        </button>
+                      </li>
+                      <li class="blog-actions__item">
+                        <button class="blog-actions__button" type="button">
+                          <span class="blog-actions__iocn-wrapper">
+                            <svg
+                              width="24.000000"
+                              height="24.000000"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                              xmlns:xlink="http://www.w3.org/1999/xlink"
+                            >
+                              <desc>Created with Pixso.</desc>
+                              <defs>
+                                <clipPath id="clip231_12444">
+                                  <rect
+                                    id="Icon"
+                                    rx="0.000000"
+                                    width="22.500000"
+                                    height="22.500000"
+                                    transform="translate(0.750000 0.750000)"
+                                    fill="white"
+                                    fill-opacity="0"
+                                  />
+                                </clipPath>
+                              </defs>
+                              <g clip-path="url(#clip231_12444)">
+                                <path
+                                  id="icon"
+                                  d="M4.17 11.29C3.36 10.92 3.39 9.76 4.22 9.45L18.89 3.8C19.7 3.49 20.5 4.29 20.19 5.1L14.54 19.77C14.23 20.6 13.07 20.63 12.7 19.82L10.03 13.96L4.17 11.29ZM10.03 13.96L14.42 9.57"
+                                  stroke="#666666"
+                                  stroke-opacity="1.000000"
+                                  stroke-width="1.500000"
+                                  stroke-linejoin="round"
+                                  stroke-linecap="round"
+                                />
+                              </g>
+                            </svg>
+                          </span>
+                          <span> 20 </span>
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <a href="" class="news-card__link button">Read More</a>
+                </div>
+              </article>
+            </li>
+            <li class="list-item">
+              <div class="news container">
+                <ul class="news__list">
+                  <li class="news__item">
+                    <article class="news-card">
+                      <img
+                        src="./img/page news/main/hero alt/Image-1.jpeg"
+                        alt=""
+                        width="512"
+                        height="222"
+                        class="news-card__img"
+                      />
+                      <div class="news-card__body">
+                        <h2 class="news-card__title h6">
+                          A Decisive Victory for Progressive Policies
+                        </h2>
+                        <div class="news-card__description">
+                          <p>Politics</p>
+                        </div>
+                      </div>
+                      <div class="news-card__control">
+                        <div class="news-card__actions blog-actions">
+                          <ul class="blog-actions__list">
+                            <li class="blog-actions__item">
+                              <button
+                                class="blog-actions__button"
+                                type="button"
+                              >
+                                <span class="blog-actions__iocn-wrapper">
+                                  <svg
+                                    width="24.000000"
+                                    height="24.000000"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                  >
+                                    <defs>
+                                      <clipPath id="clip296_29">
+                                        <rect
+                                          id="Icon"
+                                          rx="0.000000"
+                                          width="23.000000"
+                                          height="23.000000"
+                                          transform="translate(0.500000 0.500000)"
+                                          fill="white"
+                                          fill-opacity="0"
+                                        />
+                                      </clipPath>
+                                    </defs>
+                                    <g clip-path="url(#clip296_29)">
+                                      <path
+                                        id="Union (Stroke)"
+                                        d="M11.64 20.91L11.64 20.91C11.86 21.02 12.13 21.02 12.35 20.91L12.35 20.91L12.36 20.9L12.38 20.89C12.4 20.88 12.43 20.86 12.46 20.84C12.53 20.81 12.63 20.75 12.76 20.67C13.02 20.52 13.38 20.3 13.82 20.01C14.68 19.43 15.84 18.59 17.01 17.5C19.31 15.36 21.75 12.17 21.75 8.25C21.75 5.32 19.28 3 16.31 3C14.56 3 12.99 3.79 12 5.05C11 3.79 9.43 3 7.68 3C4.71 3 2.25 5.32 2.25 8.25C2.25 12.17 4.68 15.36 6.98 17.5C8.15 18.59 9.31 19.43 10.17 20.01C10.61 20.3 10.97 20.52 11.23 20.67C11.36 20.75 11.46 20.81 11.53 20.84C11.56 20.86 11.59 20.88 11.61 20.89L11.63 20.9L11.64 20.91Z"
+                                        stroke="#666666"
+                                        stroke-opacity="1.000000"
+                                        stroke-width="1.500000"
+                                        stroke-linejoin="round"
+                                      />
+                                    </g>
+                                  </svg>
+                                </span>
+                                <span> 14k</span>
+                              </button>
+                            </li>
+                            <li class="blog-actions__item">
+                              <button
+                                class="blog-actions__button"
+                                type="button"
+                              >
+                                <span class="blog-actions__iocn-wrapper">
+                                  <svg
+                                    width="24.000000"
+                                    height="24.000000"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                  >
+                                    <desc>Created with Pixso.</desc>
+                                    <defs>
+                                      <clipPath id="clip231_12444">
+                                        <rect
+                                          id="Icon"
+                                          rx="0.000000"
+                                          width="22.500000"
+                                          height="22.500000"
+                                          transform="translate(0.750000 0.750000)"
+                                          fill="white"
+                                          fill-opacity="0"
+                                        />
+                                      </clipPath>
+                                    </defs>
+                                    <g clip-path="url(#clip231_12444)">
+                                      <path
+                                        id="icon"
+                                        d="M4.17 11.29C3.36 10.92 3.39 9.76 4.22 9.45L18.89 3.8C19.7 3.49 20.5 4.29 20.19 5.1L14.54 19.77C14.23 20.6 13.07 20.63 12.7 19.82L10.03 13.96L4.17 11.29ZM10.03 13.96L14.42 9.57"
+                                        stroke="#666666"
+                                        stroke-opacity="1.000000"
+                                        stroke-width="1.500000"
+                                        stroke-linejoin="round"
+                                        stroke-linecap="round"
+                                      />
+                                    </g>
+                                  </svg>
+                                </span>
+                                <span> 20 </span>
+                              </button>
+                            </li>
+                          </ul>
+                        </div>
+                        <a href="" class="news-card__link button">
+                          <span class="icon icon--yellow-arrow">Read more</span>
+                        </a>
+                      </div>
+                    </article>
+                  </li>
+                  <li class="news__item">
+                    <article class="news-card">
+                      <img
+                        src="./img/page news/main/hero alt/Image (1).jpeg"
+                        alt=""
+                        width="512"
+                        height="222"
+                        class="news-card__img"
+                      />
+                      <div class="news-card__body">
+                        <h2 class="news-card__title h6">
+                          Tech Giants Unveil Cutting-Edge AI Innovations
+                        </h2>
+                        <div class="news-card__description">
+                          <p>Technology</p>
+                        </div>
+                      </div>
+                      <div class="news-card__control">
+                        <div class="news-card__actions blog-actions">
+                          <ul class="blog-actions__list">
+                            <li class="blog-actions__item">
+                              <button
+                                class="blog-actions__button"
+                                type="button"
+                              >
+                                <span class="blog-actions__iocn-wrapper">
+                                  <svg
+                                    width="24.000000"
+                                    height="24.000000"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                  >
+                                    <defs>
+                                      <clipPath id="clip296_29">
+                                        <rect
+                                          id="Icon"
+                                          rx="0.000000"
+                                          width="23.000000"
+                                          height="23.000000"
+                                          transform="translate(0.500000 0.500000)"
+                                          fill="white"
+                                          fill-opacity="0"
+                                        />
+                                      </clipPath>
+                                    </defs>
+                                    <g clip-path="url(#clip296_29)">
+                                      <path
+                                        id="Union (Stroke)"
+                                        d="M11.64 20.91L11.64 20.91C11.86 21.02 12.13 21.02 12.35 20.91L12.35 20.91L12.36 20.9L12.38 20.89C12.4 20.88 12.43 20.86 12.46 20.84C12.53 20.81 12.63 20.75 12.76 20.67C13.02 20.52 13.38 20.3 13.82 20.01C14.68 19.43 15.84 18.59 17.01 17.5C19.31 15.36 21.75 12.17 21.75 8.25C21.75 5.32 19.28 3 16.31 3C14.56 3 12.99 3.79 12 5.05C11 3.79 9.43 3 7.68 3C4.71 3 2.25 5.32 2.25 8.25C2.25 12.17 4.68 15.36 6.98 17.5C8.15 18.59 9.31 19.43 10.17 20.01C10.61 20.3 10.97 20.52 11.23 20.67C11.36 20.75 11.46 20.81 11.53 20.84C11.56 20.86 11.59 20.88 11.61 20.89L11.63 20.9L11.64 20.91Z"
+                                        stroke="#666666"
+                                        stroke-opacity="1.000000"
+                                        stroke-width="1.500000"
+                                        stroke-linejoin="round"
+                                      />
+                                    </g>
+                                  </svg>
+                                </span>
+                                <span> 14k</span>
+                              </button>
+                            </li>
+                            <li class="blog-actions__item">
+                              <button
+                                class="blog-actions__button"
+                                type="button"
+                              >
+                                <span class="blog-actions__iocn-wrapper">
+                                  <svg
+                                    width="24.000000"
+                                    height="24.000000"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                  >
+                                    <desc>Created with Pixso.</desc>
+                                    <defs>
+                                      <clipPath id="clip231_12444">
+                                        <rect
+                                          id="Icon"
+                                          rx="0.000000"
+                                          width="22.500000"
+                                          height="22.500000"
+                                          transform="translate(0.750000 0.750000)"
+                                          fill="white"
+                                          fill-opacity="0"
+                                        />
+                                      </clipPath>
+                                    </defs>
+                                    <g clip-path="url(#clip231_12444)">
+                                      <path
+                                        id="icon"
+                                        d="M4.17 11.29C3.36 10.92 3.39 9.76 4.22 9.45L18.89 3.8C19.7 3.49 20.5 4.29 20.19 5.1L14.54 19.77C14.23 20.6 13.07 20.63 12.7 19.82L10.03 13.96L4.17 11.29ZM10.03 13.96L14.42 9.57"
+                                        stroke="#666666"
+                                        stroke-opacity="1.000000"
+                                        stroke-width="1.500000"
+                                        stroke-linejoin="round"
+                                        stroke-linecap="round"
+                                      />
+                                    </g>
+                                  </svg>
+                                </span>
+                                <span> 20 </span>
+                              </button>
+                            </li>
+                          </ul>
+                        </div>
+                        <a href="" class="news-card__link button">
+                          <span class="icon icon--yellow-arrow">Read more</span>
+                        </a>
+                      </div>
+                    </article>
+                  </li>
+                  <li class="news__item">
+                    <article class="news-card">
+                      <img
+                        src="./img/page news/main/hero alt/Image (2).jpeg"
+                        alt=""
+                        width="512"
+                        height="222"
+                        class="news-card__img"
+                      />
+                      <div class="news-card__body">
+                        <h2 class="news-card__title h6">COVID-19 Variants</h2>
+                        <div class="news-card__description">
+                          <p>Health</p>
+                        </div>
+                      </div>
+                      <div class="news-card__control">
+                        <div class="news-card__actions blog-actions">
+                          <ul class="blog-actions__list">
+                            <li class="blog-actions__item">
+                              <button
+                                class="blog-actions__button"
+                                type="button"
+                              >
+                                <span class="blog-actions__iocn-wrapper">
+                                  <svg
+                                    width="24.000000"
+                                    height="24.000000"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                  >
+                                    <defs>
+                                      <clipPath id="clip296_29">
+                                        <rect
+                                          id="Icon"
+                                          rx="0.000000"
+                                          width="23.000000"
+                                          height="23.000000"
+                                          transform="translate(0.500000 0.500000)"
+                                          fill="white"
+                                          fill-opacity="0"
+                                        />
+                                      </clipPath>
+                                    </defs>
+                                    <g clip-path="url(#clip296_29)">
+                                      <path
+                                        id="Union (Stroke)"
+                                        d="M11.64 20.91L11.64 20.91C11.86 21.02 12.13 21.02 12.35 20.91L12.35 20.91L12.36 20.9L12.38 20.89C12.4 20.88 12.43 20.86 12.46 20.84C12.53 20.81 12.63 20.75 12.76 20.67C13.02 20.52 13.38 20.3 13.82 20.01C14.68 19.43 15.84 18.59 17.01 17.5C19.31 15.36 21.75 12.17 21.75 8.25C21.75 5.32 19.28 3 16.31 3C14.56 3 12.99 3.79 12 5.05C11 3.79 9.43 3 7.68 3C4.71 3 2.25 5.32 2.25 8.25C2.25 12.17 4.68 15.36 6.98 17.5C8.15 18.59 9.31 19.43 10.17 20.01C10.61 20.3 10.97 20.52 11.23 20.67C11.36 20.75 11.46 20.81 11.53 20.84C11.56 20.86 11.59 20.88 11.61 20.89L11.63 20.9L11.64 20.91Z"
+                                        stroke="#666666"
+                                        stroke-opacity="1.000000"
+                                        stroke-width="1.500000"
+                                        stroke-linejoin="round"
+                                      />
+                                    </g>
+                                  </svg>
+                                </span>
+                                <span> 14k</span>
+                              </button>
+                            </li>
+                            <li class="blog-actions__item">
+                              <button
+                                class="blog-actions__button"
+                                type="button"
+                              >
+                                <span class="blog-actions__iocn-wrapper">
+                                  <svg
+                                    width="24.000000"
+                                    height="24.000000"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                  >
+                                    <desc>Created with Pixso.</desc>
+                                    <defs>
+                                      <clipPath id="clip231_12444">
+                                        <rect
+                                          id="Icon"
+                                          rx="0.000000"
+                                          width="22.500000"
+                                          height="22.500000"
+                                          transform="translate(0.750000 0.750000)"
+                                          fill="white"
+                                          fill-opacity="0"
+                                        />
+                                      </clipPath>
+                                    </defs>
+                                    <g clip-path="url(#clip231_12444)">
+                                      <path
+                                        id="icon"
+                                        d="M4.17 11.29C3.36 10.92 3.39 9.76 4.22 9.45L18.89 3.8C19.7 3.49 20.5 4.29 20.19 5.1L14.54 19.77C14.23 20.6 13.07 20.63 12.7 19.82L10.03 13.96L4.17 11.29ZM10.03 13.96L14.42 9.57"
+                                        stroke="#666666"
+                                        stroke-opacity="1.000000"
+                                        stroke-width="1.500000"
+                                        stroke-linejoin="round"
+                                        stroke-linecap="round"
+                                      />
+                                    </g>
+                                  </svg>
+                                </span>
+                                <span> 20 </span>
+                              </button>
+                            </li>
+                          </ul>
+                        </div>
+                        <a href="" class="news-card__link button">
+                          <span class="icon icon--yellow-arrow">Read more</span>
+                        </a>
+                      </div>
+                    </article>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__inner container">
+        <div class="footer__body">
+          <nav class="footer__menu">
+            <div class="footer__menu-column">
+              <a href="/" class="footer__menu-main-link h6">Home</a>
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                  <a href="/" class="footer__menu-link">Features</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="/" class="footer__menu-link">Blogs</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="/" class="footer__menu-link">Resources</a>
+                  <span class="badge">New</span>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="/" class="footer__menu-link">Testimonials</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="/" class="footer__menu-link">Contact Us</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="/" class="footer__menu-link">Newsletter</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__menu-column">
+              <a href="/" class="footer__menu-main-link h6">News</a>
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                  <a href="/" class="footer__menu-link">Trending Stories</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="/" class="footer__menu-link">Featured Videos</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="/" class="footer__menu-link">Technology</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="/" class="footer__menu-link">Health</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="/" class="footer__menu-link">Politics</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="/" class="footer__menu-link">Environment</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__menu-column">
+              <a href="/" class="footer__menu-main-link h6">Blogs</a>
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                  <a href="/" class="footer__menu-link">Quantum Computing</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="/" class="footer__menu-link">AI Ethics</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="/" class="footer__menu-link">Space Exploration</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="/" class="footer__menu-link">Biotechnology</a>
+                  <span class="badge">New</span>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="/" class="footer__menu-link">Renewable Energy</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="/" class="footer__menu-link">Biohacking</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__menu-column">
+              <a href="/" class="footer__menu-main-link h6">Podcasts</a>
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                  <a href="/" class="footer__menu-link">AI Revolution</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="/" class="footer__menu-link">AI Revolution</a>
+                  <span class="badge">New</span>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="/" class="footer__menu-link">TechTalk AI</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="/" class="footer__menu-link">AI Conversations</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__menu-column">
+              <a href="/" class="footer__menu-main-link h6">Resources</a>
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                  <a href="/" class="footer__menu-link button"
+                    ><span class="icon icon--yellow-arrow">Whitepapers</span></a
+                  >
+                </li>
+                <li class="footer__menu-item">
+                  <a href="/" class="footer__menu-link button"
+                    ><span class="icon icon--yellow-arrow">Ebooks</span></a
+                  >
+                </li>
+                <li class="footer__menu-item">
+                  <a href="/" class="footer__menu-link button"
+                    ><span class="icon icon--yellow-arrow">Reports</span></a
+                  >
+                </li>
+                <li class="footer__menu-item">
+                  <a href="/" class="footer__menu-link button"
+                    ><span class="icon icon--yellow-arrow"
+                      >Research Papers</span
+                    ></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="footer__extra">
+          <div class="footer__extra-menu">
+            <ul class="footer__extra-menu-list">
+              <li class="footer__extra-menu-item">
+                <a href="" class="footer__extra-menu-link"
+                  >Terms & Conditions</a
+                >
+              </li>
+              <li class="footer__extra-menu-item">
+                <a href="" class="footer__extra-menu-link">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__soc1als soc1als">
+            <ul class="soc1als__list">
+              <li class="soc1als__item">
+                <a href="/" class="soc1als__link" target="_blank">
+                  <svg
+                    width="24.000000"
+                    height="24.000000"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <rect
+                      id="Icon"
+                      rx="0.000000"
+                      width="23.000000"
+                      height="23.000000"
+                      transform="translate(0.500000 0.500000)"
+                      fill="#FFFFFF"
+                      fill-opacity="0"
+                    />
+                    <g clip-path="url(#clip89_325)">
+                      <path
+                        id="Vector"
+                        d="M13.53 12.22C13.53 15.99 10.5 19.05 6.76 19.05C3.03 19.05 0 15.99 0 12.22C0 8.45 3.03 5.4 6.76 5.4C10.5 5.4 13.53 8.45 13.53 12.22Z"
+                        fill="#FFFFFF"
+                        fill-opacity="1.000000"
+                        fill-rule="nonzero"
+                      />
+                      <path
+                        id="Vector"
+                        d="M20.96 12.22C20.96 15.77 19.44 18.65 17.57 18.65C15.7 18.65 14.19 15.77 14.19 12.22C14.19 8.67 15.7 5.79 17.57 5.79C19.44 5.79 20.96 8.67 20.96 12.22L20.96 12.22Z"
+                        fill="#FFFFFF"
+                        fill-opacity="1.000000"
+                        fill-rule="nonzero"
+                      />
+                      <path
+                        id="Vector"
+                        d="M24 12.22C24 15.4 23.46 17.98 22.8 17.98C22.15 17.98 21.61 15.4 21.61 12.22C21.61 9.04 22.15 6.46 22.8 6.46C23.46 6.46 24 9.04 24 12.22Z"
+                        fill="#FFFFFF"
+                        fill-opacity="1.000000"
+                        fill-rule="nonzero"
+                      />
+                    </g>
+                  </svg>
+                </a>
+              </li>
+              <li class="soc1als__item">
+                <a href="/" class="soc1als__link" target="_blank">
+                  <svg
+                    width="24.000000"
+                    height="24.000000"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <rect
+                      id="Icon"
+                      rx="0.000000"
+                      width="23.000000"
+                      height="23.000000"
+                      transform="translate(0.500000 0.500000)"
+                      fill="#FFFFFF"
+                      fill-opacity="0"
+                    />
+                    <g clip-path="url(#clip89_323)">
+                      <path
+                        id="Vector"
+                        d="M20.86 1.59L3.13 1.59C2.72 1.59 2.33 1.76 2.04 2.04C1.76 2.33 1.6 2.72 1.6 3.13L1.6 20.86C1.6 21.27 1.76 21.66 2.04 21.95C2.33 22.23 2.72 22.39 3.13 22.39L20.86 22.39C21.27 22.39 21.66 22.23 21.95 21.95C22.23 21.66 22.4 21.27 22.4 20.86L22.4 3.13C22.4 2.72 22.23 2.33 21.95 2.04C21.66 1.76 21.27 1.59 20.86 1.59ZM7.79 19.31L4.67 19.31L4.67 9.38L7.79 9.38L7.79 19.31ZM6.23 8C5.87 8 5.53 7.89 5.23 7.7C4.94 7.5 4.71 7.22 4.58 6.89C4.44 6.56 4.41 6.2 4.48 5.85C4.55 5.5 4.72 5.18 4.97 4.93C5.23 4.68 5.55 4.51 5.89 4.45C6.24 4.38 6.6 4.41 6.93 4.55C7.26 4.69 7.54 4.92 7.73 5.21C7.93 5.51 8.03 5.86 8.03 6.21C8.04 6.45 7.99 6.68 7.9 6.9C7.81 7.12 7.68 7.32 7.51 7.49C7.34 7.66 7.14 7.79 6.92 7.88C6.7 7.97 6.47 8.01 6.23 8ZM19.32 19.32L16.2 19.32L16.2 13.9C16.2 12.29 15.52 11.8 14.64 11.8C13.71 11.8 12.8 12.5 12.8 13.94L12.8 19.32L9.67 19.32L9.67 9.39L12.68 9.39L12.68 10.76L12.72 10.76C13.02 10.15 14.08 9.11 15.69 9.11C17.44 9.11 19.32 10.14 19.32 13.18L19.32 19.32Z"
+                        fill="#FFFFFF"
+                        fill-opacity="1.000000"
+                        fill-rule="nonzero"
+                      />
+                    </g>
+                  </svg>
+                </a>
+              </li>
+              <li class="soc1als__item">
+                <a href="/" class="soc1als__link" target="_blank">
+                  <svg
+                    width="24.000000"
+                    height="24.000000"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <rect
+                      id="Icon"
+                      rx="0.000000"
+                      width="23.000000"
+                      height="23.000000"
+                      transform="translate(0.500000 0.500000)"
+                      fill="#FFFFFF"
+                      fill-opacity="0"
+                    />
+                    <g clip-path="url(#clip89_321)">
+                      <path
+                        id="Vector"
+                        d="M21.05 7.18C21.06 7.39 21.06 7.59 21.06 7.8C21.07 14.2 16.37 21.6 7.76 21.6C5.23 21.6 2.73 20.84 0.6 19.42C0.97 19.46 1.34 19.48 1.71 19.48C3.81 19.48 5.86 18.75 7.51 17.4C5.51 17.36 3.75 16.01 3.14 14.03C3.85 14.17 4.57 14.15 5.25 13.94C3.08 13.5 1.51 11.52 1.5 9.2C1.5 9.18 1.5 9.16 1.5 9.14C2.15 9.52 2.88 9.73 3.62 9.75C1.58 8.33 0.94 5.5 2.18 3.28C4.56 6.31 8.06 8.15 11.82 8.35C11.44 6.67 11.96 4.9 13.17 3.71C15.05 1.88 18.01 1.97 19.79 3.92C20.84 3.71 21.85 3.31 22.77 2.74C22.41 3.86 21.68 4.81 20.71 5.42C21.64 5.3 22.54 5.04 23.4 4.66C22.77 5.64 21.97 6.49 21.05 7.18Z"
+                        fill="#FFFFFF"
+                        fill-opacity="1.000000"
+                        fill-rule="nonzero"
+                      />
+                    </g>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <p class="footer__copyright">
+            © 2024 FutureTech. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

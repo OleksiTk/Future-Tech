@@ -104,11 +104,10 @@
   background-color: var(--color-dark);
   pointer-events: none;
 }
-.button--accent {
+.header__overlay.is-active {
+  pointer-events: all; /* Дозволяє взаємодіяти з елементами всередині */
 }
-.burger-button {
-  &__line {
-  }
-}
-.visible-mobile {
+
+.header__overlay:not(.is-active) {
+  pointer-events: none; /* Блокує взаємодію з меню, коли воно закрите */
 }

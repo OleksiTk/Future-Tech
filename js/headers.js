@@ -19,10 +19,20 @@ class Header {
     this.bindEvents();
   }
 
+  // Обробка натискання на кнопку меню
   onBurgerButtonClick = () => {
     this.burgerButtonElement.classList.toggle(this.stateClasses.isActive);
     this.overlayElement.classList.toggle(this.stateClasses.isActive);
     document.documentElement.classList.toggle(this.stateClasses.isLock);
+  };
+
+  // Обробка натискання на фон для закриття меню
+  onOverlayClick = (event) => {
+    if (event.target === this.overlayElement) {
+      this.overlayElement.classList.remove(this.stateClasses.isActive);
+      this.burgerButtonElement.classList.remove(this.stateClasses.isActive);
+      document.documentElement.classList.remove(this.stateClasses.isLock);
+    }
   };
 
   bindEvents() {
@@ -30,6 +40,7 @@ class Header {
       "click",
       this.onBurgerButtonClick
     );
+    this.overlayElement.addEventListener("click", this.onOverlayClick); // Закриття меню по натисканню на overlay
   }
 }
 

@@ -11,7 +11,7 @@
 @use "./blocks/logo";
 @use "./blocks/header";
 @use "./blocks/metrics";
-//main
+//main page
 @use "./blocks/hero";
 @use "./blocks/advanteges-card";
 @use "./blocks/recours";
@@ -31,6 +31,11 @@
 @use "./blocks/review-card";
 @use "./blocks/about";
 @use "./blocks/about-card";
+//news page
+@use "./blocks/hero-alt";
+@use "./blocks/news-card";
+@use "./blocks/summary";
+@use "./blocks/news";
 
 //footer
 @use "./blocks/badge";

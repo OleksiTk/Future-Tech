@@ -1,0 +1,13 @@
+@use "../helpers/index" as *;
+
+.news {
+  padding-block: fluid(80, 40);
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(rem(358), 1fr));
+    column-gap: rem(30);
+  }
+
+  &__item {
+  }
+}

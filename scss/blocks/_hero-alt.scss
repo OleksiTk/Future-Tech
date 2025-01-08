@@ -1,0 +1,67 @@
+@use "../helpers/index" as *;
+.hero-alt {
+  &__header {
+    padding-top: rem(130);
+    padding-bottom: rem(150);
+    border-bottom: var(--border);
+    @include laptop {
+      padding-top: rem(80);
+      padding-bottom: rem(100);
+    }
+    @include mobile {
+      padding-block: rem(40);
+    }
+  }
+
+  &__header-inner {
+    display: grid;
+
+    @include mobile-above {
+      grid-template-columns: auto 1fr;
+      row-gap: fluid(20, 14);
+      column-gap: fluid(80, 60);
+    }
+  }
+
+  &__title {
+    grid-column: -1/1;
+  }
+
+  &__title-hidden-part {
+    @include mobile-above {
+      @include visually-hidden;
+    }
+  }
+
+  &__subtitle {
+  }
+
+  &__description {
+  }
+
+  &__body {
+  }
+}
+
+.blog-actions {
+  &__list {
+  }
+
+  &__item {
+  }
+
+  &__button {
+  }
+
+  &__iocn-wrapper {
+  }
+}
+.button {
+}
+
+.h6 {
+}
+.icon {
+}
+.icon--yellow-arrow {
+}
