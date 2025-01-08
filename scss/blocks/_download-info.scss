@@ -1,0 +1,18 @@
+@use "../helpers/index" as *;
+
+.download-info {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  column-gap: rem(50);
+
+  @include laptop {
+    column-gap: rem(30);
+  }
+
+  &__tema {
+    background-color: var(--color-dark);
+    border: var(--border);
+    border-radius: rem(12);
+  }
+}

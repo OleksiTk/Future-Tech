@@ -1,0 +1,52 @@
+@use "../helpers/index" as *;
+.blog-actions {
+  &__list {
+    display: flex;
+    column-gap: fluid(10, 8);
+  }
+
+  &__item {
+  }
+
+  &__button {
+    display: inline-flex;
+    align-items: center;
+    background-color: var(--color-dark-10);
+    font-family: var(--font-family-accent);
+    font-size: rem(18);
+    border-radius: rem(100);
+    border: var(--border);
+    column-gap: rem(4);
+    color: var(--color-gray-60);
+
+    @include laptop {
+      font-size: rem(14);
+    }
+
+    &.is-active {
+      svg * {
+        fill: var(--color-red);
+        stroke: var(--color-red);
+      }
+    }
+  }
+
+  &__iocn-wrapper {
+    --sizeIcon: #{rem(24)};
+    display: flex;
+
+    @include square(var(--font-family-accent));
+    @include laptop {
+      --sizeIcon: #{rem(20)};
+    }
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    * {
+      fill: transparent;
+    }
+  }
+}

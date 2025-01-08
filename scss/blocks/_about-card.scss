@@ -1,0 +1,38 @@
+@use "../helpers/index" as *;
+.about {
+  &__card {
+    display: flex;
+    flex-direction: column;
+    row-gap: fluid(30, 10);
+  }
+  &__card-wrapper {
+    --circleSize: #{rem(50)};
+    --circleMarginLeft: #{rem(20)};
+    position: relative;
+    padding-right: calc(var(--circleSize) + var(--circleMarginLeft));
+    display: grid;
+    row-gap: rem(4);
+    @include laptop {
+      --circleSize: #{rem(44)};
+      --circleMarginLeft: #{rem(14)};
+      row-gap: rem(2);
+    }
+    &::after {
+      @include square(var(--circleSize));
+
+      @include abs-y;
+
+      content: "";
+      right: 0;
+
+      background: url("../../img/main/advantages/arrow-black.svg") center
+        no-repeat var(--color-accent);
+      border-radius: 50%;
+    }
+  }
+  &__card-title {
+  }
+
+  &__card-description {
+  }
+}

@@ -6,6 +6,20 @@
   }
 
   &__header-inner {
+    &:has(.section__link) {
+      display: grid;
+
+      align-items: center;
+      column-gap: rem(1);
+
+      @include mobile-above {
+        grid-template-columns: 1fr auto;
+      }
+
+      @include mobile {
+        row-gap: rem(30);
+      }
+    }
   }
 
   &__header-info {

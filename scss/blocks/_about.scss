@@ -1,0 +1,81 @@
+@use "../helpers/index" as *;
+.about {
+  padding-block: fluid(120, 40);
+  background-color: var(--color-dark-10);
+  &__inner {
+    display: grid;
+    row-gap: fluid(100, 40);
+  }
+
+  &__header {
+    @include laptop-above {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      column-gap: fluid(80, 60);
+    }
+
+    @include mobile {
+      display: grid;
+      grid-template-columns: auto rem(215) auto;
+      grid-template-areas:
+        "icon subtitle t2"
+        "title title title"
+        "desc desc desc";
+    }
+  }
+
+  &__icon {
+    @include laptop {
+      width: rem(60);
+      height: rem(60);
+    }
+    @include mobile {
+      grid-area: icon;
+      padding-right: rem(20);
+    }
+  }
+  &__info {
+    @include mobile {
+      display: contents;
+      grid-area: title;
+    }
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: start;
+  }
+  &__subtitle {
+    @include mobile {
+      grid-area: subtitle;
+
+      height: rem(30);
+    }
+  }
+
+  &__title {
+    padding-top: fluid(15, 10);
+    @include mobile {
+      grid-area: title;
+    }
+  }
+
+  &__description {
+    padding-top: fluid(30, 4);
+    @include mobile {
+      grid-area: desc;
+    }
+  }
+
+  &__list {
+    @include laptop-above {
+      display: flex;
+      column-gap: fluid(20, 10);
+      background-color: var(--color-dark);
+      padding: fluid(20, 10) fluid(20, 10);
+      border-radius: rem(12);
+    }
+  }
+
+  &__item {
+  }
+}

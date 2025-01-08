@@ -1,0 +1,30 @@
+@use "../helpers/index" as *;
+
+.review-card {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  row-gap: rem(40);
+
+  @include laptop {
+    row-gap: rem(30);
+  }
+
+  &__author {
+  }
+
+  &__body {
+    padding: fluid(30, 20);
+    padding-top: fluid(50, 30);
+    color: var(--color-light);
+    position: relative;
+    text-align: center;
+  }
+
+  &__rating-view {
+    position: absolute;
+    top: 0;
+    left: 0;
+    translate: -50% -50%;
+  }
+}

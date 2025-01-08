@@ -1,0 +1,45 @@
+@use "../helpers/index" as *;
+
+.bordered-grid {
+  --colunmGrid: 1;
+  --itemPaddingY: #{fluid(80, 40)};
+
+  display: grid;
+  grid-template-columns: repeat(var(--colunmGrid), 1fr);
+
+  &--2-cols {
+    --colunmGrid: 2;
+  }
+  &--3-cols {
+    --colunmGrid: 3;
+    --itemPaddingX: #{rem(50)};
+    padding-block: var(--itemPaddingX);
+    @include laptop {
+      --itemPaddingX: #{rem(40)};
+    }
+    .bordered-grid__item {
+      &:nth-child(3n-2),
+      &:nth-child(3n-1) {
+        padding-right: var(--itemPaddingX);
+        border-right: var(--border);
+      }
+      &:nth-child(3n-1) {
+        @include full-vw-centered-line(bottom);
+      }
+      &:nth-child(3n-1),
+      &:nth-child(3n) {
+        padding-left: var(--itemPaddingX);
+      }
+    }
+    @include tablet {
+      --colunmGrid: 1;
+      justify-content: center;
+      align-items: center;
+    }
+    @include tablet-above {
+      &__item {
+        padding-block: var(--itemPaddingY);
+      }
+    }
+  }
+}

@@ -1,0 +1,114 @@
+@use "../helpers/index" as *;
+
+.tabs {
+  &__header {
+    border-bottom: var(--border);
+
+    @include laptop {
+      overflow-x: auto;
+    }
+  }
+
+  &__buttons {
+    padding-block: fluid(50, 20);
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: rem(20);
+
+    @include laptop {
+      column-gap: rem(14);
+    }
+    @include tablet {
+      width: max-content;
+    }
+  }
+
+  &__button {
+    padding: fluid(30, 18) rem(10);
+    color: var(--color-gray-60);
+    background-color: transparent;
+    border: var(--border);
+    border-radius: rem(8);
+    font-size: rem(18);
+    @include hover {
+      color: var(--color-accent);
+      border-color: var(--color-accent);
+    }
+    @include laptop {
+      font-size: rem(14);
+    }
+
+    &.is-active {
+      background-color: var(--color-dark-10);
+      font-weight: 500;
+    }
+  }
+
+  &__body {
+  }
+
+  &__content {
+  }
+}
+
+.list {
+  &__item {
+  }
+}
+.blog-card {
+  &_author {
+  }
+
+  &__body {
+  }
+
+  &__date {
+  }
+
+  &__info {
+  }
+
+  &__title {
+  }
+
+  &__description {
+  }
+
+  &__actions {
+  }
+
+  &__link {
+  }
+}
+.person-card {
+  &__img {
+  }
+
+  &__body {
+  }
+
+  &__name {
+  }
+
+  &__department {
+  }
+}
+.blog-actions {
+  &__list {
+  }
+
+  &__item {
+  }
+
+  &__button {
+  }
+
+  &__iocn-wrapper {
+  }
+}
+.button {
+}
+.icon {
+}
+.icon--yellow-arrow {
+}

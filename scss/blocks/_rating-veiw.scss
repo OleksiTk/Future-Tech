@@ -1,0 +1,24 @@
+@use "../helpers/index" as *;
+
+.rating-view {
+  display: flex;
+  column-gap: fluid(7, 2);
+  padding: rem(10) rem(16);
+  border-radius: rem(100);
+  border: var(--border);
+  @include laptop {
+    padding: rem(8) rem(12);
+  }
+}
+.rating-view__star {
+  -size: #{rem(24)};
+  @include square(var(--size));
+  @include laptop {
+    -size: #{rem(20)};
+  }
+  background: url("../../img/main/review/Shape.png") center/contain no-repeat;
+
+  &.is-active {
+    background-image: url("../../img/main/review/Shape.svg");
+  }
+}
