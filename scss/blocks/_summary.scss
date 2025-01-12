@@ -1,5 +1,23 @@
 @use "../helpers/index" as *;
 .summary {
+  &--2-cols {
+    .summary__list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+      gap: rem(30) rem(20);
+
+      @include laptop {
+        row-gap: rem(20);
+      }
+    }
+    .summary__item {
+      &--wide {
+        grid-column: -1/1;
+        margin-top: rem(20);
+      }
+    }
+  }
   &__list {
     display: flex;
     column-gap: fluid(50, 20);

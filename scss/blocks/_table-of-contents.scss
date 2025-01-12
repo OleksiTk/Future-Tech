@@ -1,0 +1,18 @@
+@use "../helpers/index" as *;
+.table-of-contents {
+  padding: rem(20);
+  border-radius: rem(12);
+  background-color: var(--color-dark-10);
+  @include laptop {
+    border-radius: rem(10);
+  }
+  &__list {
+    display: grid;
+    row-gap: fluid(20, 16);
+  }
+
+  &__item {
+    list-style-type: disc;
+    margin-left: 1.5em;
+  }
+}

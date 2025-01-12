@@ -25,6 +25,11 @@
     background-image: url("../../img/header/arrow-yellow/arrow.svg");
   }
 }
+.icon--gray-arrow {
+  &::after {
+    background-image: url("../../img/header/arrow-yellow/Icon1.svg");
+  }
+}
 
 .icon--yellow-eye {
   &::after {

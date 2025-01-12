@@ -85,7 +85,18 @@
       column-gap: rem(20);
     }
   }
+  &__grid--3-cols {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: rem(20);
+    row-gap: rem(40);
 
+    @include mobile {
+      column-gap: rem(10);
+      row-gap: rem(20);
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
   &__cell {
     display: flex;
     flex-direction: column;

@@ -1,0 +1,38 @@
+@use "../helpers/index" as *;
+
+.expandable-content {
+  --initiallMaxHeigth: #{rem(500)};
+
+  position: relative;
+  overflow-y: hidden;
+
+  &.is-expanded {
+    &::after,
+    .expandable-content__button {
+      @include hide;
+    }
+  }
+  &:not(.is-expanded) {
+    max-height: var(--initiallMaxHeigth);
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(
+      180deg,
+      rgba(20, 20, 20, 0) -98.485%,
+      rgb(20, 20, 20) 55.11%
+    );
+    pointer-events: none;
+    transition-duration: var(--transition-duration);
+  }
+
+  &__button {
+    @include abs-x;
+    bottom: rem(60);
+  }
+}
