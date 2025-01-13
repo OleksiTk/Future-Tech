@@ -613,9 +613,21 @@ svg * {
   pointer-events: all; /* Дозволяє взаємодіяти з елементами всередині */
 }
 
+.metrics {
+  --columns: 3;
+}
+.metrics--4-cols {
+  --columns: 4;
+  text-align: center;
+}
+@media (width <= 63.99875rem) {
+  .metrics--4-cols {
+    --columns: 2;
+  }
+}
 .metrics__list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(var(--columns), 1fr);
 }
 .metrics__item {
   display: flex;
@@ -1718,6 +1730,27 @@ svg * {
 @media (width <= 90.06125rem) {
   .video-card {
     row-gap: 1.25rem;
+  }
+}
+.video-card__body-3-cels {
+  --columns: 2;
+  display: grid;
+  grid-template-columns: repeat(var(--columns), auto);
+  grid-template-areas: "title button" "subtitle button";
+}
+.video-card__body-3-cels .video-card__title {
+  grid-area: title;
+}
+.video-card__body-3-cels .video-card__description {
+  grid-area: subtitle;
+}
+.video-card__body-3-cels .video-card-link {
+  grid-area: button;
+}
+@media (width <= 63.99875rem) {
+  .video-card__body-3-cels {
+    grid-template-areas: "title title" "subtitle subtitle" "button button";
+    --columns: 1;
   }
 }
 .video-card__body {

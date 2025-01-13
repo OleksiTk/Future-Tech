@@ -9,7 +9,31 @@
   @include laptop {
     row-gap: rem(20);
   }
+  &__body-3-cels {
+    --columns: 2;
+    display: grid;
+    grid-template-columns: repeat(var(--columns), auto);
+    grid-template-areas:
+      "title button"
+      "subtitle button";
+    .video-card__title {
+      grid-area: title;
+    }
+    .video-card__description {
+      grid-area: subtitle;
+    }
+    .video-card-link {
+      grid-area: button;
+    }
 
+    @include tablet {
+      grid-template-areas:
+        "title title"
+        "subtitle subtitle"
+        "button button";
+      --columns: 1;
+    }
+  }
   &__body {
     display: grid;
     row-gap: fluid(10, 4);
