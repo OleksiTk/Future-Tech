@@ -6,6 +6,11 @@
 
   display: grid;
   grid-template-columns: repeat(var(--columns), 1fr);
+  row-gap: rem(100);
+
+  @include mobile {
+    row-gap: rem(30);
+  }
 
   &--2-cols {
     --columns: 2;

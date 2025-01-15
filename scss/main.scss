@@ -43,6 +43,20 @@
 @use "./blocks/expandable-content";
 @use "./blocks/blog-details";
 @use "./blocks/table-of-contents";
+
+// resource
+@use "./blocks/report-card";
+
+//contacts
+@use "./blocks/contacts-card";
+@use "./blocks/feild";
+@use "./blocks/select";
+@use "./blocks/checkbox";
+@use "./blocks/feed-back";
+@use "./blocks/accordion";
+@use "./blocks/accordion-group.scss";
+@use "./blocks/contacts";
+
 //footer
 @use "./blocks/badge";
 @use "./blocks/footer";

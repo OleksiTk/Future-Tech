@@ -1,0 +1,67 @@
+@use "../helpers/index" as *;
+
+.accordion {
+  --visibleOpen: 0fr;
+  &__details {
+    &[open] {
+      --visibleOpen: 1fr;
+      .accordion__title {
+        &::after,
+        &::before {
+          background-color: var(--color-light);
+        }
+        &::after {
+          rotate: 180deg;
+        }
+      }
+      & + .accordion__contnet {
+        grid-template-rows: 1fr;
+      }
+    }
+  }
+  display: flex;
+  flex-direction: column;
+  row-gap: fluid(30, 20);
+  &__summary {
+    list-style: none;
+  }
+
+  &__title {
+    position: relative;
+    padding-right: rem(15);
+
+    &::after,
+    &::before {
+      @include abs-y;
+
+      content: "";
+      width: rem(16);
+      height: rem(2);
+      right: 0;
+      background-color: var(--color-accent);
+      border-radius: 1rem;
+
+      transition-duration: var(--transition-duration);
+    }
+
+    &::after {
+      rotate: 90deg;
+    }
+  }
+  &__contnet {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition-duration: 0.3s;
+
+    &-inner {
+      overflow: hidden;
+    }
+  }
+  &__contnet-body {
+    --offSetTOp: #{fluid(24, 16)};
+
+    padding-top: var(--offSetTOp);
+
+    border-top: var(--border);
+  }
+}

@@ -1,0 +1,51 @@
+@use "../helpers/index" as *;
+
+.feild {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  row-gap: rem(16);
+  font-size: rem(18);
+  color: var(--color-light);
+  @include laptop {
+    row-gap: rem(10);
+  }
+  &__required-star {
+    color: var(--color-red);
+  }
+  &__body {
+    display: flex;
+    column-gap: rem(16);
+    width: 100%;
+    @include laptop {
+      column-gap: rem(12);
+    }
+  }
+  &__control {
+    width: 100%;
+    height: rem(67);
+    padding-inline: rem(20);
+    color: var(--color-light);
+    background-color: var(--color-dark-10);
+    border: var(--border);
+    border-radius: rem(8);
+
+    @include hover {
+      border-color: var(--color-accent);
+    }
+    @include laptop {
+      height: rem(53);
+      padding-inline: rem(16);
+    }
+
+    &::placeholder {
+      color: var(--color-dark-40);
+    }
+  }
+
+  textarea.feild__control {
+    resize: vertical;
+    min-height: rem(130);
+    padding-block: rem(20);
+  }
+}

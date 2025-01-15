@@ -1,5 +1,11 @@
 @use "../helpers/index" as *;
 .card {
+  &:has(.feedback-form) {
+    border-bottom: var(--border);
+  }
+  &:has(.accordion) {
+    border-bottom: var(--border) var(--color-dark-10);
+  }
   @include tablet-above {
     display: grid;
     grid-template-columns: 38% auto;
